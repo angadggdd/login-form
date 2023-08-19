@@ -1,18 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
-body{
+
+body {
     height: 100vh;
     width: 100%;
-    /* background: yellow; */
+    background: yellow;
 
 }
 
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
@@ -26,7 +27,7 @@ body{
 
 }
 
-.navbar a{
+.navbar a {
     position: relative;
     font-size: 16px;
     text-decoration: none;
@@ -34,13 +35,13 @@ body{
 
 }
 
-.navbar a::after{
+.navbar a::after {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: greenyellow;
     bottom: -5px;
     border-radius: 5px;
     transform: translateY(10px);
@@ -48,11 +49,13 @@ body{
     transition: .5s ease;
 
 }
-.navbar a:hover:after{
+
+.navbar a:hover:after {
     transform: translateY(0);
     opacity: 1;
 }
-.search-bar{
+
+.search-bar {
     width: 250px;
     height: 45px;
     background-color: transparent;
@@ -62,8 +65,8 @@ body{
     align-items: center;
 
 }
- 
-.search-bar input{
+
+.search-bar input {
     width: 100%;
     background-color: transparent;
     border: none;
@@ -73,7 +76,7 @@ body{
     padding-left: 10px;
 }
 
-.search-bar button{
+.search-bar button {
     width: 40px;
     height: 100%;
     background: transparent;
@@ -82,71 +85,145 @@ body{
     color: #fff;
     cursor: pointer;
 
-    
+
 
 }
 
-.search-bar input::placeholder{
+.search-bar input::placeholder {
     color: #fff;
 }
-.search-bar button i{
+
+.search-bar button i {
     font-size: 22px;
 
 }
 
-.container{
+.container {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     width: 75%;
     background-color: rgb(177, 177, 199);
     height: 400px;
     margin-top: 20px;
     border-radius: 20px;
 
-} 
-.item{
+}
+
+.item {
     position: absolute;
     top: 0;
     left: 0;
-    width: 70%;
+    width: 54%;
     height: 100%;
     color: #fff;
-    background:green;
-    padding: 80px;
+    background: green;
+    padding: 54px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     border-radius: 25px;
 }
 
-.item .logo{
+.item .logo {
     color: #fff;
     font-size: 32px;
 
 }
 
-.text-item h2{
+.text-item h2 {
     font-size: 40px;
     line-height: 1;
 
 }
-.text-item p{
+
+.text-item p {
     font-size: 16px;
 }
 
-.social-icon a{
-    /* color: #fff; */
+.social-icon a {
+    color: #fff;
     font-size: 24px;
     margin-left: 10px;
     cursor: pointer;
     transition: .5s ease;
+}
 
+.social-icon a:hover i {
+    transition: scale(1.2);
+    color: rgb(211, 90, 185);
+}
 
-    
+.container .login-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 58%);
+    height: 100%;
+
 }
 
 
+.login-section .form-box {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 
+}
+
+.login-section .form-box h2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.form-box .input-box{
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    padding: 30px 0;
+    position: relative;
+
+}
+/* .input-box{
+    right: 40%;
+} */
+/* 
+.new-form{
+    margin-right: 400px;
+} */
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 600px;
+    pointer-events: none;
+
+}
+
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+
+}
 
