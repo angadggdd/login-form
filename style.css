@@ -8,7 +8,7 @@
 body{
     height: 100vh;
     width: 100%;
-    background: yellow;
+    /* background: yellow; */
 
 }
 
@@ -18,7 +18,7 @@ body{
     left: 0;
     width: 100%;
     padding: 25px 13%;
-    background: greenyellow;
+    background: red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,7 +62,7 @@ body{
     align-items: center;
 
 }
-
+ 
 .search-bar input{
     width: 100%;
     background-color: transparent;
@@ -76,5 +76,77 @@ body{
 .search-bar button{
     width: 40px;
     height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+
+    
+
 }
+
+.search-bar input::placeholder{
+    color: #fff;
+}
+.search-bar button i{
+    font-size: 22px;
+
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 75%;
+    background-color: rgb(177, 177, 199);
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+
+} 
+.item{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    color: #fff;
+    background:green;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+.item .logo{
+    color: #fff;
+    font-size: 32px;
+
+}
+
+.text-item h2{
+    font-size: 40px;
+    line-height: 1;
+
+}
+.text-item p{
+    font-size: 16px;
+}
+
+.social-icon a{
+    /* color: #fff; */
+    font-size: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: .5s ease;
+
+
+    
+}
+
+
+
 
