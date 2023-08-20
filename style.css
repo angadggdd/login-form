@@ -10,8 +10,14 @@ body {
     height: 100vh;
     width: 100%;
     background: yellow;
-
 }
+/* .background{
+    background: url() no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+} */
 
 .header {
     position: fixed;
@@ -19,7 +25,7 @@ body {
     left: 0;
     width: 100%;
     padding: 25px 13%;
-    background: red;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,6 +114,7 @@ body {
     height: 400px;
     margin-top: 20px;
     border-radius: 20px;
+    overflow: hidden;
 
 }
 
@@ -124,6 +131,7 @@ body {
     justify-content: space-between;
     flex-direction: column;
     border-radius: 25px;
+    backdrop-filter: blur(10px);
 }
 
 .item .logo {
@@ -172,7 +180,28 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+}
 
+.login-section .form-box.register{
+    transform: translateX(430px);
+    transition: transform .6s ease;
+    transition-delay: 0s;
+}
+
+.login-section.active .form-box.register{
+    transform: translateX(0px);
+    transition-delay: .7s;
+}
+
+.login-section .form-box.login{
+    transform: translateX(0px);
+    transition: transform .6s ease;
+    transition-delay: .7s;
+}
+
+.login-section.active .form-box.login{
+    transform: translateX(430px);
+    transition-delay: 0s;
 }
 
 .login-section .form-box h2 {
@@ -183,7 +212,7 @@ body {
 
 .form-box .input-box{
     width: 340px;
-    height: 50px;
+    height: 35px;
     border-bottom: 2px solid #fff;
     margin: 30px 0;
     position: relative;
