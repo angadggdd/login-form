@@ -38,7 +38,9 @@
                 <h2>Welcome! <br><span>
                         To Our Channel
                     </span></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, tempora.</p>
+                <p>Here, you'll find intriguing and essential information 
+                    that will help expand your knowledge horizons. 
+                    Join us and step into the world of knowledge!"</p>
                 <div class="social-icon">
                     <a href="a"><i class='bx bxl-facebook'></i></a>
                     <a href="a"><i class='bx bxl-twitter'></i></a>
@@ -75,11 +77,12 @@
             </div>
 
             <div class="form-box register">
-                <form action="" class="new-form">
+                <form action="" class="new-form" onsubmit="return myFun()">
                     <h2>Sign Up</h2>
                     <div class="input-box">
                         <spam class="icon"><i class='bx bxs-user'></i></spam>
-                        <input type="text" required>
+                        <input type="text" id="User_Name" value="">
+                        <span id="Message"></span>
                         <label for="">User Name</label>
                     </div>
                     <div class="input-box">
@@ -100,7 +103,7 @@
                     <div class="remember-posword">
                         <label for=""><input type="checkbox">I agree with this statement</label>
                     </div>
-                    <button class="btn">Login In</button>
+                    <button class="btn" onclick="">Login In</button>
                     <div class="create-account">
                         <p>Already have an Account?<a href="#" class="login-link">Sign In</a></p>
                     </div>
